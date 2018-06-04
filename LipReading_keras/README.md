@@ -1,5 +1,5 @@
 # Lipreading With Machine Learning In keras
-A keras implementation of the models described in [Combining Residual Networks with LSTMs for Lipreading]  by T. Stafylakis and G. Tzimiropoulos.
+A keras implementation of the models described in [Combining Residual Networks with LSTMs for Lipreading]  by T. Stafylakis and G. Tzimiropoulos, with another preprocessing
 
 ## Usage
  - Install [Python 3].

@@ -9,8 +9,8 @@ A keras implementation of the models described in [Combining Residual Networks w
  - to use, run  `python3 main.py`.
 
 ## Dependencies
+ - [keras]
  - [Python 3] to run the program
- - [keras] network definition and backprop
  - [tensorflow] for tensors
  - [dlib] for face detection model
  - [NumPy] to visualize individual layers

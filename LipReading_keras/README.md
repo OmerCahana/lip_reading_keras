@@ -5,7 +5,7 @@ A keras implementation of the models described in [Combining Residual Networks w
  - Install [Python 3].
  - Clone the repository.
  - Run `pip3 install -r requirements.txt` to install project dependencies.
- - Build the data with `python3 data/buildDataset.py` 
+ - Build the data with `python3 buildDataset.py` 
  - to use, run  `python3 main.py`.
 
 ## Dependencies

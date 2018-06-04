@@ -12,7 +12,7 @@ A keras implementation of the models described in [Combining Residual Networks w
  - [Python 3] to run the program
  - [keras] network definition and backprop
  - [tensorflow] for tensors
- - [dlib developers] for face detection model
+ - [dlib] for face detection model
  - [NumPy] to visualize individual layers
 
    [Combining Residual Networks with LSTMs for Lipreading]: <https://arxiv.org/pdf/1703.04105.pdf>

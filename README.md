@@ -1,6 +1,6 @@
 # lip_reading_keras
 
-For any question about the project fell free to ask.
+For any question feel free to ask
 
 vladi katsman : <katsmanva@gmail.com>
 

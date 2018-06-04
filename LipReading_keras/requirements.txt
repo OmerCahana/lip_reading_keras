@@ -1,0 +1,9 @@
+tensorflow
+keras
+numpy
+dlib
+h5py
+imutils
+cv2
+PIL
+sklearn

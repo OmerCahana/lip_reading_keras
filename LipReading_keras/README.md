@@ -5,6 +5,7 @@ A keras implementation of the models described in [Combining Residual Networks w
  - Install [Python 3].
  - Clone the repository.
  - Run `pip3 install -r requirements.txt` to install project dependencies.
+ - download shape_predictor_68_face_landmarks.dat from  <http://dlib.net/files/>
  - Build the data with `python3 data/buildDataset.py` 
  - to use, run  `python3 main.py`.
 
@@ -21,3 +22,5 @@ A keras implementation of the models described in [Combining Residual Networks w
    [keras]: <https://keras.io/>
    [dlib]: <http://dlib.net/>
    [NumPy]: <http://www.numpy.org/>
+   
+   

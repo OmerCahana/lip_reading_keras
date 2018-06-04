@@ -8,13 +8,13 @@ path = "/home/usr/lipread_mp4/"
 data = dataset_builder(path)
 
 # Start to build train set
-hdf5_path_val = "/home/usr/train_set.hdf5"
-data.get_train(1000, hdf5_path_val)
+train_path = "/home/usr/train_set.hdf5"
+data.get_data(name = 'train',train_path)
 
 # Start to build train set
-hdf5_path_val = "/home/usr/val_set.hdf5"
-data.get_val(50, hdf5_path_val)
+val_path = "/home/usr/val_set.hdf5"
+data.get_data(name = 'val',val_path)
 
 # Start to build train set
-hdf5_path_val = "/home/usr/test_set.hdf5"
-data.get_test(50, hdf5_path_val)
+test_path = "/home/usr/test_set.hdf5"
+data.get_data(name = 'test',test_path)

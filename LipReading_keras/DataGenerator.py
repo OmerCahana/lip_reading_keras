@@ -34,7 +34,7 @@ class DataGenerator(keras.utils.Sequence):
         y = np.empty((self.batch_size,29 , 500))
 
         for i in range(0, self.batch_size):
-            idx = randint(0,self.data_sampels-1)
+            idx = randint(0, 20000)
             if (self.name == 'train'):
                 x[i] = hdf5_file['x_' + self.name][idx]
                 y[i] = hdf5_file['y_' + self.name][keras.utils.to_categorical(idx, num_classes=500)]

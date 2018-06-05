@@ -1,7 +1,6 @@
 from DataGenerator import DataGenerator
 import keras
 from models import Conv_backend,Frontend_conv,lstm_backend
-from keras.utils import multi_gpu_model
 from keras.models import Model
 from keras import optimizers
 from keras.layers import *

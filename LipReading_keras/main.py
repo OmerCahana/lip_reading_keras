@@ -1,5 +1,4 @@
 from DataGenerator import DataGenerator
-import keras
 from models import Conv_backend,Frontend_conv,lstm_backend
 from keras.models import Model
 from keras import optimizers
@@ -14,12 +13,12 @@ lstm_output = lstm_backend.backend_lstm(FrontEnd_output)
 
 model = Model(inputs=inputs, outputs =lstm_output)
 
-training_generator = DataGenerator(name = 'train', batch_size = 64,file_name = "train_set.hdf5", data_sampels = 400000)
+training_generator = DataGenerator(name = 'train', batch_size = 64,file_name = "train_set.hdf5", data_sampels = 488766)
 validation_generator = DataGenerator(name = 'val', batch_size = 64,file_name =  "val_set.hdf5",data_sampels =25000)
 
-adam = keras.optimizers.Adam(lr=0.005, beta_1=0.9, beta_2=0.999, epsilon=None, decay=0.0001, amsgrad=False)
+sgd = optimizers.SGD(lr=0.005, decay=1e-6, momentum=0.9, nesterov=False)
 
-model.compile(optimizer=adam,
+model.compile(optimizer=sgd ,
               loss=NLLoss,
               metrics=['accuracy'])
 

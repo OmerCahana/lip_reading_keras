@@ -17,6 +17,6 @@ def FrontEnd(inputs):
     max_pool = MaxPooling3D(pool_size=(1, 2, 2), strides=None, padding='valid', data_format='channels_last',
                             name = 'max_pooling_first')(relu)
 
-    Resnet  = TimeDistributed(resnet.Build_resnet_34(input_shape =(64,28,28) ,num_outputs = 512))(max_pool)
+    Resnet  = TimeDistributed(resnet.Build_resnet_34(input_shape =(64,28,28) ,num_outputs = 256))(max_pool)
     
     return Resnet
